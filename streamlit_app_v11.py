@@ -130,6 +130,14 @@ elif options == "Interpretability Engine":
 
     By applying LIME, we can make predictions from both models more transparent and generate explanations that are easier to understand.
     """)
+    
+    st.write("""
+    **Instructions**:
+    1. Select a model in the sidebar (either Logistic Regression or Gradient Boosting).
+    2. Upload the **cardio_train** dataset using the 'Upload CSV file' button.
+    3. Select a **patient ID** (from the 'ID' column of the dataset) using the dropdown.
+    4. Hit the **Generate Prediction Explanation** button to generate an interpretability explanation.
+    """)
 
     model_choice = st.sidebar.selectbox("Choose a model", ["Logistic Regression", "Gradient Boosting"])
 
